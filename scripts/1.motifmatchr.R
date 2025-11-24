@@ -1,8 +1,8 @@
 cond <- grepl('/hpc', getwd())
 if (cond){
-  source('/hpc/group/adrc/dcg27/african_american_multiome/scripts/config.R')
+  source('/path/to/config.R')
 } else {
-  source('C:/Users/danie/Desktop/african_american_multiome/scripts/config.R')
+  source('path/to/config.R')
 } ; rm(cond)
 set.seed(1)
 
@@ -87,3 +87,4 @@ saveRDS(pos, paste0('2.motifmatchr3___', cluster_id, '.rds'))
 
 sesh <- capture.output(sessionInfo())
 print(sesh)
+
