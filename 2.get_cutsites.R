@@ -5,9 +5,9 @@
 # R
 cond <- grepl('/hpc', getwd())
 if (cond){
-  source('/hpc/group/adrc/dcg27/african_american_multiome/scripts/config.R')
+  source('/path/to/config.R')
 } else {
-  source('C:/Users/danie/Desktop/african_american_multiome/scripts/config.R')
+  source('C:/Users/path/to/config.R')
 } ; rm(cond)
 set.seed(1)
 
@@ -153,4 +153,5 @@ setwd('/hpc/group/adrc/dcg27/african_american_multiome/data/15.centipede3')
 saveRDS(master, paste0('3.get_cutsites3___', cluster_id, '_', chr_id, '.rds'))
 
 sesh <- capture.output(sessionInfo())
+
 print(sesh)
