@@ -32,11 +32,11 @@ $$
 \begin{aligned}
     p(X | Z, R, p, \lambda, \mu_1, \mu_0, \phi_1, \phi_0) = & \sum_{i=1}^N Z_i \log \pi + Z_i X_i \log p + Z_i \big( \log \Gamma (R_i + \phi_1) \\
     & - \log \Gamma( \phi_1 ) - \log \Gamma (R_i + 1 ) + \phi_1 \log (\phi_1) \\
-    & - \phi_1 \log (\phi_1 + \mu_1 ) + R_i \log ( \mu_1 ) - R_i \log (\phi_1 + \mu_1 ) \big) \\
-    & + (1 - Z_i) \log (1 - \pi ) + (1-Z_i) X_i \log (\lambda) \\
-    & + (1 - Z_i) \big( \log \Gamma( R_i + \phi_0 ) - \log \Gamma (\phi_0 ) \\
-    & - \log \Gamma (R_i + 1) + \phi_0 \log ( \phi_0 ) - \phi_0 \log (\phi_0 + \mu_0) \\ 
-    &+ R_i \log (\mu_0) - R_i \log (\phi_0 + \mu_0) \big) 
+    & \ - \phi_1 \log (\phi_1 + \mu_1 ) + R_i \log ( \mu_1 ) - R_i \log (\phi_1 + \mu_1 ) \big) \\
+    & \ \ + (1 - Z_i) \log (1 - \pi ) + (1-Z_i) X_i \log (\lambda) \\
+    & \ \ \ + (1 - Z_i) \big( \log \Gamma( R_i + \phi_0 ) - \log \Gamma (\phi_0 ) \\
+    & \ \ \ \- \log \Gamma (R_i + 1) + \phi_0 \log ( \phi_0 ) - \phi_0 \log (\phi_0 + \mu_0) \\ 
+    & \ \ \ \ \ + R_i \log (\mu_0) - R_i \log (\phi_0 + \mu_0) \big) 
 \end{aligned}
 $$
 
