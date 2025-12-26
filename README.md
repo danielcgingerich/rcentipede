@@ -3,7 +3,7 @@
 This is an R implementation of the CENTIPEDE model first proposed by R Pique Regi et al. 2011, Accurate inference of transcription factor binding from DNA sequence and chromatin accessibility data. Though the model was originally implemented for DNAse-seq datasets, we extend its applications to single nuclei ATAC-seq data. 
 
 ### Model overview
-Model notation – we have matrix $X \in \mathbb{R}^{N \times 200} $, where each row corresponds to the transcription factor binding site (TFBS) in question, and each column corresponds to the base pair (bp) position flanking the TFBS, from $-100$ (upstream) to $100$ (downstream). The values of $X$ indicate the number of cutsites detected at position $j$. We denote $X_i$ as row $i$ of $X$. We denote $R_i=\sum_j X_{ij}$. Additionally, we introduce a latent variable, $Z_i$, to denote whether TFBS $i$ is bound ($Z_i = 1$) or not ($Z_i = 0$).
+Model notation – we have matrix $X \in \mathbb{R}^{N \times 200}$, where each row corresponds to the transcription factor binding site (TFBS) in question, and each column corresponds to the base pair (bp) position flanking the TFBS, from $-100$ (upstream) to $100$ (downstream). The values of $X$ indicate the number of cutsites detected at position $j$. We denote $X_i$ as row $i$ of $X$. We denote $R_i=\sum_j X_{ij}$. Additionally, we introduce a latent variable, $Z_i$, to denote whether TFBS $i$ is bound ($Z_i = 1$) or not ($Z_i = 0$).
 
 Marginalizing out $Z$, we have: 
 
